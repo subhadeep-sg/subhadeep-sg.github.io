@@ -200,8 +200,11 @@ body.dark-mode a:hover {
   color: #99ccff;
 }
 
-body.dark-mode header h1 {
-  color: #66b2ff;
+/* Blu-ish color contrast again dark background */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #66b2ff; 
 }
 
 

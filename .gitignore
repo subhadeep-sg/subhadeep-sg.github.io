@@ -1,7 +1,6 @@
 PROGRESS.md
 
 **/*.pdf
-
 **/*.docx
 **/*.doc
 
@@ -9,4 +8,3 @@ PROGRESS.md
 env
 
 
-local_files/profile_pic.jpg
