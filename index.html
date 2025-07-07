@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subhadeep Sengupta - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+  <header>
+    
+    <div class="container">
+        <img src="local_files/profile_pic2.jpg" alt="Subhadeep Sengupta" class="profile-pic"/>
+    <h1>Subhadeep Sengupta</h1>
+    <p>
+      <a href="mailto:sengupta.subhadeep26@gmail.com">sengupta.subhadeep26@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/subhadeep-sengupta" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/subhadeep-sg" target="_blank">GitHub</a>
+    </p>
+    </div>
+  </header>
+
+  <main>
+     <section id="education">
+        <h2>Education</h2>
+
+        <div class="edu-entry">
+            <h3><a href="https://www.ai.uga.edu/directory/people/subhadeep-sengupta" target="_blank">University of Georgia, Athens, GA</a></h3>
+            <p><strong>Master of Science in Artificial Intelligence</strong>, Aug. 2025<br/>
+            GPA: 3.68/4.0</p>
+            <p><strong>Coursework:</strong> Data Mining, Deductive Systems, Biomedical Imaging, Machine Learning for Computer Vision, Decision Making Under Uncertainty, Ethics and AI, Knowledge-Based Systems</p>
+        </div>
+
+        <div class="edu-entry">
+            <h3>National Institute of Technology Karnataka, India</h3>
+            <p><strong>Bachelor of Technology in Electronics and Communication Engineering</strong>, May 2022<br/>
+            GPA: 7.49/10.0</p>
+            <p><strong>Coursework:</strong> Computer Programming, Linear Algebra and Probability Theory, Engineering Mathematics</p>
+        </div>
+        </section>
+
+        <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="exp-entry">
+            <h3>Undergraduate Research Intern – ECG Bradycardia Detection</h3>
+            <p><em>National Institute of Technology Karnataka, India</em><br/>
+            May 2021 – July 2021</p>
+            <ul>
+            <li>Designed and implemented a machine learning pipeline for bradycardia detection in ECG signals, using handcrafted features and ensemble learning techniques.</li>
+            <li>Achieved improved classification accuracy and published findings in the International Journal of Information Technology.</li>
+            <li><a href="https://github.com/subhadeep-sg/ecg-classification" target="_blank">Project code on GitHub</a>.</li>
+            </ul>
+        </div>
+        </section>
+
+        <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-entry">
+            <h3><a href="https://github.com/subhadeep-sg/supply-chain-integration" target="_blank">Freight Demand Forecasting</a></h3>
+            <p><strong>Tools:</strong> Python, Pandas, Statsmodels, FastAPI</p>
+            <p><strong>Skills:</strong> Time-series forecasting, data analysis, data visualization</p>
+            <ul>
+                <li>
+                Performed EDA on 10+ years of Georgia freight data from the 
+                <a href="https://www.bts.gov/faf" target="_blank">Freight Analysis Framework (FAF)</a>, combined with economic indicators:
+                <ul>
+                    <li><a href="https://fred.stlouisfed.org/series/MEHOINUSGAA672N" target="_blank">Income</a></li>
+                    <li><a href="https://fred.stlouisfed.org/series/GARETAILNQGSP" target="_blank">GDP</a></li>
+                    <li>US Census Population data: 
+                    <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html" target="_blank">2010–2019</a>, 
+                    <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-total.html" target="_blank">2020–2024</a>
+                    </li>
+                </ul>
+                </li>
+                <li>Trained a SARIMAX model achieving ~6% forecasting error for 1-year predictions.</li>
+                <li>Built a FastAPI interface to serve predictions with HTML forms for user input.</li>
+            </ul>
+        </div>
+
+
+        <div class="project-entry">
+            <h3><a href="https://github.com/subhadeep-sg/flow-cytometry-classification-workflow" target="_blank">Flow Cytometry Cell Classifier</a></h3>
+            <p><strong>Tools:</strong> Python, PyTorch, GPT-4o</p>
+            <p><strong>Skills:</strong> Medical image classification, few-shot learning</p>
+            <ul>
+            <li>Trained a CNN achieving 87% accuracy on 2,000+ labeled images.</li>
+            <li>Explored few-shot learning with GPT-4o, reducing required samples by ~80%.</li>
+            <li>Work for this project led to my <a href="https://drive.google.com/file/d/1B2m8-gvBBL5_WVi93sjsN-UMMNP-Jm1d/view?usp=drive_link" target="_blank">master's thesis</a>.</li>
+
+            </ul>
+        </div>
+
+        <div class="project-entry">
+            <h3><a href="https://github.com/subhadeep-sg/4d-flow-tools" target="_blank">Tooling for 4DFlowNet Thrombus Flow Reconstruction</a></h3>
+            <p><strong>Tools:</strong> Python, TensorFlow, Matplotlib, HDF5</p>
+            <p><strong>Skills:</strong> Data visualization, data preprocessing</p>
+            <ul>
+                <li>Adapted the 
+                    <a href="https://github.com/EdwardFerdian/4DFlowNet" target="_blank">4DFlowNet</a> 
+                    pipeline to process .dat-formatted thrombus velocity data with ~1 million points per frame.</li>
+                <li>Developed multi-slice visualizations to compare velocity and streamline improvements in thrombus regions.</li>
+            </ul>
+        </div>
+
+        <div class="project-entry">
+            <h3><a href="https://github.com/subhadeep-sg/spotify-listening-tracker" target="_blank">Spotify Listening Data Tracker</a></h3>
+            <p><strong>Tools:</strong> Python, Spotify Web API</p>
+            <p><strong>Skills:</strong> Data collection, data preprocessing</p>
+            <ul>
+            <li>Collected 3,400+ records of listening history over 6+ months using 
+                <a href="https://developer.spotify.com/documentation/web-api" target="_blank">Spotify Web API</a>.</li>
+            <li>Implemented timestamp formats (ISO, IST, EST) to avoid duplicate entries.</li>
+            <li>Captured metadata like artist, genre, and duration for future analytics.</li>
+            </ul>
+        </div>
+
+        <div class="project-entry">
+            <h3>
+                <a href="https://github.com/subhadeep-sg/MRI-Brain-Tumor-Classification" target="_blank">
+                MRI Brain Tumor Classification
+                </a>
+            </h3>
+            <p><strong>Tools:</strong> Python, TensorFlow</p>
+            <p><strong>Skills:</strong> Medical image classification</p>
+            <ul>
+                <li>Built a deep learning model to classify three types of brain tumors — Glioma, Meningioma, and Pituitary tumor — from MRI images.</li>
+                <li>Utilized the 
+                    <a href="https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri" target="_blank">Brain Tumor Classification (MRI) dataset from Kaggle</a> 
+                    with 2,870 training and 394 testing images across four classes, including a “No tumor” category.</li>
+                <li>Preprocessed MRI images and trained a CNN achieving good accuracy in distinguishing tumor types.</li>
+            </ul>
+            </div>
+
+        <div class="project-entry">
+            <h3>
+                <a href="https://github.com/subhadeep-sg/early-parkinsons-detection" target="_blank">
+                Studying Biomarker Importance in Early Parkinson’s  
+                </a>
+            </h3>
+            <p><strong>Tools:</strong> Python, Scikit-learn, XGBoost</p>
+            <p><strong>Skills:</strong> Feature selection, classification</p>
+            <ul>
+                <li>Analyzed clinical and biosample data from the 
+                    <a href="https://www.michaeljfox.org/news/parkinsons-progression-markers-initiative-ppmi" target="_blank">Parkinson's Progression Markers Initiative (PPMI)</a> to identify features predictive of early-stage Parkinson’s disease.</li>
+                <li>Focused on both handpicked and model-selected biomarkers to assess their relative predictive power.</li>
+            </ul>
+        </div>
+        </section>
+
+
+        <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, C/C++, SQL</li>
+            <li><strong>Libraries:</strong> PyTorch, TensorFlow, Pandas, NumPy, Matplotlib, SciPy, Plotly, Scikit-learn, XGBoost, Statsmodels, FastAPI</li>
+            <li><strong>Developer Tools:</strong> Git, PyCharm, VS Code, Visual Studio, IntelliJ, Jupyter</li>
+        </ul>
+        </section>
+
+        <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="pub-entry">
+            <h3>
+            <a href="https://doi.org/10.1007/s41870-022-00963-4" target="_blank">
+                Detection of bradycardia from electrocardiogram signals using feature extraction and snapshot ensembling
+            </a>
+            </h3>
+            <p><strong>May 2022</strong> – International Journal of Information Technology</p>
+            <p>Authors: Subhadeep Sengupta, Veena Mayya, S. Sowmya Kamath</p>
+            <p><a href="https://drive.google.com/file/d/1KkCtNMcEa9HmzIosnRSC_TWpAzxi2D4a/view?usp=drive_link" target="_blank">Download paper</a>.</p>
+        </div>
+        </section>
+
+        <section id="resume-download">
+        <h2>Resume</h2>
+        <p>
+            <a href="https://drive.google.com/file/d/1j9ASdBmLJGn1roUmlS8tqVNCq_hSfGAg/view?usp=drive_link" target="_blank">Download My Resume (PDF)</a>
+        </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Subhadeep Sengupta. All rights reserved.</p>
+        </footer>
+
+  </main>
+</body>
+</html>

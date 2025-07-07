@@ -1,0 +1,150 @@
+/* Basic reset & body styling */
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Lato', 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  
+}
+
+/* Container for content */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #222;
+  font-family: 'Roboto', 'Merriweather', serif;
+}
+
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+
+
+@media (max-width: 600px) {
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Sections spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* Entries spacing */
+.edu-entry, .exp-entry, .project-entry, .pub-entry {
+  margin-bottom: 20px;
+}
+
+/* Section headings */
+section h2 {
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Entry titles (e.g., degrees, jobs, projects) */
+.edu-entry h3,
+.exp-entry h3,
+.project-entry h3,
+.pub-entry h3 {
+  margin-top: 0;
+  color: #007acc;
+}
+
+/* Paragraph spacing */
+section p, section ul {
+  margin-bottom: 10px;
+}
+
+/* List items */
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 5px;
+}
+
+section:nth-of-type(even) {
+  background-color: #f9f9f9;
+  /* padding: 20px; */
+  border-radius: 8px;
+}
+
+a {
+  color: #007acc;
+  /* text-decoration: none; */
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px dashed #007acc;
+  outline-offset: 2px;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin: 40px 0 20px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #555;
+}
+
+
+
