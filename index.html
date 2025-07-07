@@ -20,6 +20,16 @@
     gtag('config', 'G-40N5XWYVFT');
     </script>
 
+    <!-- Option to automatically have dark mode if user system pref -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        }
+        });
+    </script>
+
+
 </head>
 <body>
   <header>
@@ -33,6 +43,9 @@
       <a href="https://github.com/subhadeep-sg" target="_blank">GitHub</a>
     </p>
     </div>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
   </header>
 
   <main>
@@ -201,5 +214,8 @@
         </footer>
 
   </main>
+
+  <script src="app.js"></script>
+
 </body>
 </html>

@@ -1,11 +1,12 @@
 PROGRESS.md
 
-app.js
-
 **/*.pdf
 
 **/*.docx
 **/*.doc
+
+.env
+env
 
 
 local_files/profile_pic.jpg
